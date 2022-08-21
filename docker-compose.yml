@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo
+  stock.api:
+    image: stock_api_image
+    build: 
+      context: .
+      dockerfile: StockAPI/StockAPI/Dockerfile
+volumes:
+  mongodb_volume: 
